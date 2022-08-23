@@ -1,0 +1,51 @@
+.vasen
+{
+  float: left;
+}
+.oikea
+{
+  float: right;
+  margin-left: 20px;
+  margin-bottom: 100px;
+}
+body
+{
+  margin: auto;
+  width: 800px;
+  background-image: url("series.jpg");
+}
+img{
+  margin: 5px 20px -5px 0px;
+  height: 100px;
+}
+select
+{
+  width: 600px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.eka
+{
+  clear: both;
+  background: khaki;
+  padding: 20px;
+}
+.toka
+{
+  clear: both;
+  background: papayawhip;
+  padding: 20px;
+}
+article
+{
+  background: # 696969;
+}
+article > h1
+{
+  padding: 20px 0 0 20px;
+  text-align: center;
+}
+section > h1
+{
+  margin: 0px 0 10px 0;
+}
