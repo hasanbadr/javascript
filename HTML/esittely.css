@@ -1,9 +1,36 @@
 body
 {
-  Width: 300px;
-  background-color: tomato
+  Width: 500px;
+  background-color: HoneyDew;
+  margin: auto;
 }
-table
+table, tr, th, td
 {
-border: 1px dotted red;
+border: 3px dotted black;
+border-collapse: collapse;
+padding: 9px
+}
+h1
+{
+font-family: "Comic Sans Ms", "comic sans", cursive;
+color: Red;
+}
+#vasen
+{
+  float: left;
+  margin-right: 20px;
+}
+#oikea
+{
+  float: right;
+  margin-left:  20px;
+}
+img
+{
+  height: 100px;
+  margin-bottom: 20px;
+}
+h2
+{
+  clear: both;
 }
