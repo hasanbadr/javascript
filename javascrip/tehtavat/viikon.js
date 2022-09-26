@@ -80,4 +80,5 @@ function kolme()
 function kolme()
  {
   var luku
+  
 }
