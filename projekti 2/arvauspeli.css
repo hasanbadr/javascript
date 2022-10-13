@@ -1,0 +1,30 @@
+body
+{
+  margin: auto;
+}
+.sisalto
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-style: groove;
+  width: 350px;
+  height: 250px;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
+}
+/*Annetaan teksille väri ja koko*/
+p {
+  color: white;
+  font-size: 24px;
+}
+/*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
+#input {
+  width: 100px;
+  margin: 25px auto;
+}
+/*Rajataan button-painiketta*/
+#btn {
+  margin: 25px auto auto 5px;
+}
