@@ -1,0 +1,46 @@
+body
+{
+margin: auto;
+width: 800;
+}
+
+.tehtävä1
+{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #B07156;
+  border-radius: 20px;
+}
+
+.tehtävä2
+{
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #AB4E68;
+  border-radius: 20px;
+}
+
+.tehtävä3
+{
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #533745;
+  border-radius: 20px;
+}
+
+.tehtävä4
+{
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #9D9171;
+  border-radius: 20px;
+}
+
+.tehtävä5
+{
+  margin-bottom: 20px;
+  width: 50%;
+  background-color: #C4A287;
+  border-radius: 20px;
+}
