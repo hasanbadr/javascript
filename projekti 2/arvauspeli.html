@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="arvauspeli.css">
+    <script src="arvauspeli.js"></script>
+    <title>Arvauspeli  </title>
+  </head>
+  <body>
+    <form name = "numForm">
+           <fieldset>
+               <label for = "randNum">Enter a number between 1 and 10: </label>
+               <input type = "text" name = "number" value = "" id = "randNum" size = "1" maxlength = "1" />
+           </fieldset>
+           <input class = "button" type = "button" name = "submit" onclick = "guessingGame()" value = "Submit Number"  />
+           <input class = "button" type = "reset" name = "newGame" onclick = "newGame()" value = "New Game" />
+           <fieldset>
+               <textarea name = "gameResults"  onclick = "" readonly = "true" value = "" rows = "5" cols = "40" ></textarea>
+           </fieldset>
+       </form>
+  </body>
+</html>

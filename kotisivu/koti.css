@@ -1,0 +1,25 @@
+*
+{
+  padding: 10PX;
+}
+
+body
+{
+  width: 800PX;
+  margin: auto;
+}
+header,footer
+{
+  background-color: #FFE9B5;
+}
+nav
+{
+  display: inline-block;
+  float: right;
+  margin-top: 25px;
+}
+h1
+{
+  display: inline-block;
+  margin-left: 50px;
+}
