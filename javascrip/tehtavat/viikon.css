@@ -1,7 +1,44 @@
-article
+body
 {
-    width: 300px;
-    background-color: yellow
-    margin: 0 auto;
-    padding: 10px;
+  margin: auto;
+  width: 900px;
+}
+
+.t1
+{
+  background-color: #FBAF00;
+  margin-bottom: 20px;
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+}
+
+.t2
+{
+  background-color: #FFD639;
+  margin-bottom: 20px;
+  width: 400px;
+}
+.t3
+{
+  background-color: #FFA3AF;
+  margin-bottom: 20px;
+  float: left;
+  width: 400px;
+  margin-right: 20px;
+}
+
+.t4
+{
+  background-color: #007CBE;
+  margin-bottom: 20px;
+  width: 400px;
+}
+
+.t5
+{
+background-color: #00AF54;
+margin-bottom: 20px;
+width: 400px;
+margin-left: 200px;
 }
