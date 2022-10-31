@@ -1,0 +1,31 @@
+body
+{
+  margin: auto;
+  width: 900px;
+}
+.te1
+{
+float: left;
+width: 400px;
+background-color: #CAF0F8;
+}
+.te2
+{
+  float: right;
+  width: 400px;
+  background-color: #0077B6;
+}
+.te3
+{
+float: right;
+  width: 400px;
+  margin-top: 40px;
+  background-color: #00B4D8;
+}
+.te4
+{
+  float: right;
+  width: 400px;
+  margin-top: 40px;
+  background-color: #90E0EF;
+}
