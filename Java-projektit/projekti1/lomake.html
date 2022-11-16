@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="lomake.css">
+    <script type="text/javascript" src="lomake.js">
+
+    </script>
+    <title>Tietojenkeruulomake</title>
+  </head>
+  <body>
+    <fieldset class="f1">
+    <form name="formi" class="" action="kiitos.html" method="post" id="clear">
+      <h1>Kirjautumislomake</h1>
+      <table>
+        <tr>
+          <td>Anna etunimi:</td>
+          <td class="oikea"><input type="text" name="enimi" value=""></td>
+        </tr>
+        <br>
+        <tr>
+          <td>Anna sukunimi:</td>
+          <td class="oikea"><input type="text" name="snimi" value=""></td>
+        </tr>
+        <br>
+        <tr>
+          <td>Anna sähköpostisi:</td>
+          <td class="oikea"><input type="text" name="email" value=""></td>
+        </tr>
+        <br>
+        <tr>
+          <td>Anna salasana:</td>
+          <td class="oikea"><input type="password" name="salasana" value=""></td>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <td><h3>Millainen tietokoneen käyttäjä olet?</h3></td>
+        </tr>
+        <tr><br>
+          <td>himopelaaja</td>
+          <td class="oikea"><input type="radio" name="tietokone" value="himopelaaja"></td>
+        </tr>
+        <tr>
+          <td>käytän opiskeluun</td>
+          <td class="oikea"><input type="radio" name="tietokone" value="käytän opiskeluun"></td>
+        </tr>
+        <tr>
+          <td>en käytä konetta</td>
+          <td class="oikea"><input type="radio" name="tietokone" value="en käytä konetta"></td>
+        </tr>
+      </table>
+      <br>
+      <h3>Mitä mieltä olet sivuistani tähän asti</h3>
+      <input type="checkbox" name="mp" value="Todella hieno">
+      <label for="sivusto"> Todella hieno</label>
+      <br>
+      <input type="checkbox" name="mp" value="Ammattimaisesti tehty">
+      <label for="sivusto"> Ammattimaiseti tehty</label>
+      <br>
+      <input type="checkbox" name="mp" value="Ostan sinulta!">
+      <label for="sivusto"> Ostan sinulta!</label>
+      <br>
+      <h3>Mikä on lempiaineesi Keudassa?</h3>
+      <br>
+      <label for="lempiaineesi">lempiaineesi?</label>
+      <select id="kivointa" name="valitse">
+        <option value="(Valitse alta oikea vaihtoehto)"></option>
+        <option value="Tietotekniikka">Tietotekniikka</option>
+        <option value="Kielet">Kielet</option>
+        <option value="Matematiikka">Matematiikka</option>
+        <option value="Yhteiskunta-aineet">Yhteiskunta-aineet</option>
+        <option value="Terveystieto">Terveystieto</option>
+      </select>
+      <br>
+      <h3>Kerro, miten kehittäisit sivujani?</h3>
+
+      <h4>Palaute:</h4>
+      <textarea name="palautet" rows="8" cols="30"></textarea>
+      <br>
+      <button type="button" name="button" onclick="projekti()">Lähetä</button>
+      <input type="button" onclick="tyhjenna()" name="" value="Tyhjennä">
+    </form>
+    </fieldset>
+  </body>
+</html>

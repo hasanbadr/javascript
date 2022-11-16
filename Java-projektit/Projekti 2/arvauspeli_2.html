@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="arvauspeli_2.css">
+    <script src="arvauspeli_2.js"></script>
+    <title>Arvauspeli</title>
+  </head>
+  <body>
+    <form id="formi" action="index.html" method="post">
+      <div id="sisalto">
+        <h3>Arvaa 1-10 väliltä</h3>
+        <p id="wins">Wins</p><p id="loose">Looses</p>
+          <input type="number" placeholder="Num" id="guess"><br><br>
+          <button type="button" id="btn" onclick="arvauspeli()" onclick="onClick()">Enter</button>
+          <button type="button" id="btn2" onclick="uusipeli()" name="button">Uusi peli</button>
+        <div class="pisteet">
+      <p id="message1">nro Of Guesses: 0</p>
+      <p id="message2">Guessed: numbers are:</p>
+      <p><a id="clicks"></a></p>
+      </div>
+    </form>
+  </body>
+</html>

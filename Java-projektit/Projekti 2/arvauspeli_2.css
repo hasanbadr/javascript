@@ -1,0 +1,50 @@
+/*Arvauspelin väri*/
+body {
+  margin: auto;
+  margin-top: 10%;
+  width: 30%;
+background-color: #ffbf80;
+}
+/*Rajataan ja keskitetään*/
+#sisalto
+{
+  margin-left: 20px;
+  margin-top: 20px;
+  box-sizing: border-box;
+  border-style: groove;
+  width: 430px;
+  height: 330px;
+  border-color: #AAAAAA;
+  border-radius: 30px;
+  padding-left: 20px;
+  background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
+}
+/*Annetaan teksille väri ja koko*/
+p {
+
+  font-size: 20px;
+}
+/*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
+#input {
+  width: 100px;
+  margin: 25px auto;
+}
+/*Rajataan button-painiketta*/
+#btn {
+  margin: 24px auto auto 5px;
+}
+
+#wins
+{
+  float: left;
+  margin: auto;
+  padding-left: 230px;
+
+}
+
+#loose
+{
+  float: right;
+  margin: auto;
+  padding-right: 30px;
+}

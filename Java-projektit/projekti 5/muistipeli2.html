@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="utf-8">
+    <title>Muistipeli</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"/>
+    <!-- Ulkoasu -->
+    <link rel="stylesheet" href="muistipeli2.css"/>
+  </head>
+
+  <body>
+    <fieldset class="palkki" >
+      <header class="otsikko">
+        <h1 id="teksti">JS pelisivusto</h1>
+      </header>
+      <div class="valikko">
+        <a href="kotisivu.html">Koti</a>
+        <a href="muistipeli2.html">Muistipeli</a>
+      </div>
+
+    </fieldset>
+    <div class="wrapper">
+      <div class="stats-container">
+        <div id="moves-count"></div>
+        <div id="aika"></div>
+      </div>
+      <div class="game-container"></div>
+      <button id="stop" class="hide">Stop Game</button>
+    </div>
+    <div class="controls-container">
+      <p id="result"></p>
+      <button id="start">Start Game</button>
+    <div class="dropdown">
+    <input class="text-box" type="text" placeholder="Select on" readonly>
+    <div class="options" onclick="active()">
+      <li><a href="muistipeli2.html">4x4</a></li>
+      <li><a href="muistipeli2.html">4x6</a></li>
+      <li><a href="muistipeli2.html">6x6</a></li>
+    </div>
+  </div>
+
+    <!-- Haetaan javascript tiedosto -->
+    <script src="muistipeli2.js"></script>
+  </body>
+</html>

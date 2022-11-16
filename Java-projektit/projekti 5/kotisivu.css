@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit&display=swap');
+
+body
+{
+  background-color: #f4c531;
+}
+
+.palkki
+{
+  border-radius: 15px;
+  background-color: white;
+
+}
+
+.otsikko
+{
+float: left;
+font-family: 'Bebas Neue', cursive;
+margin-left: 20px;
+
+}
+
+.valikko
+{
+float: right;
+display: block;
+font-family: 'Kanit', sans-serif;
+font-size: 25px;
+margin-top: 20px;
+margin-right: 20px;
+}

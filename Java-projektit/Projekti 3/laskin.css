@@ -1,0 +1,77 @@
+/*Määritetään elementtien erityistilat*/
+*, *::before, *::after{
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+body
+{
+    padding: 0;
+    margin: 0;
+    height: 100px;
+    width: 100px;
+    background-image: linear-gradient(to left, #009fff, #ec2f4b);
+}
+/*Määritetään laskimen sijainti näytölle*/
+#laskin
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 70px;
+    max-height: 80px;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+}
+#laskin > button
+{
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 1px solid #FFF;
+    background-color: #858585;
+}
+
+#laskin > button:hover
+{
+    background-color: rgba(255, 255, 255, 0.45);
+
+
+}
+/*Tehdän värit id:n sisällölle*/.
+.span-two{
+    grid-column: span 2;
+}
+
+#naytto
+{
+    grid-column: 1/-1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-break: break-word;
+    border-radius: 10px;
+}
+
+#on
+{
+  width: 300px;
+}
+
+#ednum
+{
+    color: rgba(255, 255, 255, .75);
+    font-size: 1.5rem;
+}
+
+#nyknum
+{
+    color: rgb(255, 255, 255);
+    font-size: 2.5rem;
+}

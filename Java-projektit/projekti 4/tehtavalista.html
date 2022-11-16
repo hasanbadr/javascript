@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--Linkitetään css-tiedosto web-sivuston tyyliä varten-->
+    <link rel="stylesheet" href="tehtavalista.css">
+    <!--Haetaan javascript-tiedosto toiminnallisuutta varten-->
+        <script src="tehtavalista.js"></script>
+    <title>Tehtävälista</title>
+</head>
+<body>
+  <!--Luodaan rakenne web-sivustoon näkyville. Johon sitten liitetään javascript puolella toiminnot-->
+  <div class="sisalto">
+     <header>
+        <h1>Tehtävälista</h1>
+          <form action="" id="task-form">
+            <input type="text" id="task-input" placeholder="What are your tasks for today?">
+            <input type="submit" id="task-submit" value="Add">
+            </form>
+      </header>
+  <main>
+    <section class="task-list">
+      <div id="tasks">
+      </div>
+    </section>
+</main>
+  </div>
+</body>
+</html>

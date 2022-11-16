@@ -1,0 +1,72 @@
+body
+{
+  background: #f06226;
+  color: #fff;
+  font-family: 'Arial',sans-serif;
+  font-size: 14px;
+}
+
+.sisalto
+{
+  width: 600px;;
+  background: #199fdb;
+  margin: 20px auto;
+  overflow: auto;
+  padding: 25px;
+  border-radius: 10px;
+}
+
+header
+{
+  text-align: center;
+  border-bottom: #fff dashed 1px;
+}
+
+header h1
+{
+  margin: 0;
+  padding: 0;
+}
+
+header p {
+  padding: 0;
+  margin-top: 5px;
+  color: #000;
+}
+
+section {
+  min-height: 400px;
+  overflow: auto;
+}
+
+footer
+{
+  text-align: center;
+}
+input[type='submit']
+
+{
+  background: #f06226;
+  border: 0;
+  color: #fff;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+#tulokset h3
+{
+  background: #f06226;
+
+  margin: 10px 0;
+  text-align: center;
+
+}
+
+#tulokset span
+{
+  color: #000;
+  font-weight: bold;
+}

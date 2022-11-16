@@ -1,0 +1,71 @@
+<<<<<<< HEAD
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+body
+{
+  margin: auto;
+  width: 45%;
+}
+
+h3
+{
+font-family: 'Shadows Into Light', cursive;
+text-align: center;
+font-size: 110%;
+}
+
+h1
+{
+  font-family: 'Peralta', cursive;
+  color: #FD9595;
+}
+
+.f1
+{
+width: 350px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 15px;
+background-image: linear-gradient(180deg, #AFF0ED, #C6AEDD);
+
+}
+
+button {
+  margin-bottom: 10%;;
+}
+=======
+@import url('https://fonts.googleapis.com/css2?family=Peralta&display=swap');
+
+body
+{
+  margin: auto;
+  width: 45%;
+}
+
+h3
+{
+font-family: 'Shadows Into Light', cursive;
+text-align: center;
+font-size: 110%;
+}
+
+h1
+{
+  font-family: 'Peralta', cursive;
+  color: #FD9595;
+}
+
+.f1
+{
+width: 350px;
+margin-top: 20px;
+margin-bottom: 20px;
+border-radius: 15px;
+background-image: linear-gradient(180deg, #AFF0ED, #C6AEDD);
+
+}
+
+button {
+  margin-bottom: 10%;;
+}
+>>>>>>> ae91791a8de8a951e24326b6d3d666a4425733bc
