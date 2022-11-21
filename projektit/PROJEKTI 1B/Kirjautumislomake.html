@@ -1,0 +1,57 @@
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <link rel="stylesheet" href="Kirjautumislomake.css">
+      <script type="text/javascript" src="Kirjautumislomake.js"></script>
+      <title>Kirjautumislomake</title>
+    </head>
+    <body>
+      <fieldset id="field">
+        <!--tätä tehtävässä halutaan: Esimerkiksi <h1 id="otsikko"</h1> -->
+        <h1 id="otsikko">Kirjautumislomake</h1>
+        <p id="kuvaus"></p>
+        <form id="kyselylomake" action="index.html" method="post">
+          <!--tässä luodaan nimikenttä, joka näkyy web-sivustossa käyttäjälle, johon hänen tulee kirjoittaa nimensä-->
+          <!--kirjoita nimesi-->
+          <label for="nimi">nimi:</label>
+          <!--Luodaan nimikentälle toiminto ominaisuus, jonka pystyy sitten hakemaan id:n avulla javascriptiin tiedostoa-->
+          <input type="text" id="nimisyotto" value="">
+          <br>
+          <!--Tässä luodaan ikäkenttä, joka näkyy web-sivustossa käyttäjälle, johon hänen tulee kirjoittaa nimensä-->
+          <!--Kirjoita ikäsi-->
+          <label for="ikä">ikä:</label>
+          <!--Luodaan ikäkentälle toiminto ominaisuus, jonka pystyy sitten hakemaan id:n avulla javascriptiin tiedostoa-->
+          <input type="text" id="ikasyotot" value="">
+          <br>
+          <!--Tässä luodaan sähköpostikenttä, joka näkyy web-sivustossa käyttäjälle, johon hänen tulee kirjoittaa nimensä-->
+          <!--Kirjoita sähköpostisi-->
+          <label for="sposti">sposti:</label>
+          <!--Luodaan sählöpostikentälle toiminto ominaisuus, jonka pystyy sitten hakemaan id:n avulla javascriptiin tiedostoa-->
+          <input type="text" id="emailsyotto" value="">
+          <br>
+          <h2>mitä ajoneuvoa käytät?</h2>
+          <select id="pudotus" name="">
+            <option id="valinta1" value=""></option>
+            <option id="valinta2" value="">autot</option>
+            <option id="valinta3" value="">mopo</option>
+            <option id="valinta4" value="">lentokone</option>
+          </select>
+          <br>
+          <h2>lempiruokasi</h2>
+          <input type="radio" name="ruoka1" value="">
+          <label for="ruoka"> pasta bechamel sauce</label>
+          <br>
+          <input type="radio" id="ruoka2" name="" value="">
+          <label for="ruoka">kana curry</label>
+          <br>
+          <input type="radio" id="ruoka3" name="" value="">
+          <label for="ruoka">pizza</label>
+          <br>
+          <textarea name="name" rows="8" cols="30"></textarea>
+                  <!--Tässä luodaan lähetä-nappi, joka näkyy web-sivustossa käyttäjälle, jota kautta käyttäjä lähettää tiedot eteenpäin internetissä-->
+          <button type="button" id="lähetä" onclick="Kirjautumislomake()" name="button">lähetä</button>
+        </form>
+      </fieldset>
+    </body>
+  </html>

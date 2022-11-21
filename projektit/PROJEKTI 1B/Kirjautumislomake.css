@@ -1,0 +1,30 @@
+body
+{
+  margin: auto;
+  width: 45%;
+  margin-top: 15px;
+  background-color: #F29548;
+}
+button
+{
+  margin-bottom: 10%;
+}
+h1
+{
+  font-family: 'peralta' cursive;
+  color: #FFD4AA;
+}
+h3
+{
+  font-family: 'shadows innto Light' cursive;
+  text-align: left;
+  font-size: 100%;
+}
+label
+{
+  text-align: center;
+}
+.f1
+{
+  
+}
