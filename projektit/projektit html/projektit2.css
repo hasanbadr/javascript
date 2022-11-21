@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Kanit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Kanit&family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Chewy&family=Kanit&family=Oswald:wght@300&family=Palanquin+Dark&display=swap');
+h1
+{
+  font-family: 'Chewy', cursive;
+}
+body
+{
+  margin: auto;
+  width: 700px;
+  background-color: #898989;
+}
+.vasen
+{
+  float: left;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: #898989;
+  border-radius: 10px;
+  padding-bottom: 15px;
+}
+#kuva
+{
+  height: 300px;
+}
+#otsikko
+{
+  margin-left: 60px;
+}
+#tribute-info
+{
+  float: right;
+  font-family: 'kanit',sans-serif;
+  background-color: #898989;
+  border-radius: 10px;
+  margin-top:  10px;
+  width: 450px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+#tribute-link
+{
+   margin-left: 70px;
+}
+#tieto
+{
+  margin-left: 100px;
+  font-family: 'Oswald',sans-serif;
+}
+.henk
+{
+  margin-left: 15px;
+  font-family: 'Oswald',sans-serif;
+}
+footer
+{
+  display: inline-block;
+  background-color: #898989;
+  border-radius: 10px;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
