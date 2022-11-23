@@ -4,19 +4,21 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="arvauspeli.css">
     <script src="arvauspeli.js"></script>
-    <title>Arvauspeli  </title>
+    <title>Arvauspeli</title>
   </head>
   <body>
-    <form name = "numForm">
-           <fieldset>
-               <label for = "randNum">Enter a number between 1 and 10: </label>
-               <input type = "text" name = "number" value = "" id = "randNum" size = "1" maxlength = "1" />
-           </fieldset>
-           <input class = "button" type = "button" name = "submit" onclick = "guessingGame()" value = "Submit Number"  />
-           <input class = "button" type = "reset" name = "newGame" onclick = "newGame()" value = "New Game" />
-           <fieldset>
-               <textarea name = "gameResults"  onclick = "" readonly = "true" value = "" rows = "5" cols = "40" ></textarea>
-           </fieldset>
+    <form id="formi" action="index.html" method="post">
+      <div id="sisalto">
+        <h2>arvaa 1-10 väliltä</h2>
+        <p id="wins">wins</p>
+        <p id="loose">loose</p>
+        <input type="number" placeholder="num" id="guess">
+        <button type="button" id="btn" onclick="arvauspeli()" onclick="onClick()">enter</button>
+        <button type="button" id="btn1" onclick="uusipeli()" name="button">uusipeli</button>
+      </div class="pisteet">
+      <p id="message">nro of guesses: 0</p>
+      <p id="message1">guedded: numbers:</p>
+      <p><a id="clicks"></a></p>
        </form>
   </body>
 </html>

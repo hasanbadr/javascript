@@ -1,23 +1,28 @@
 body
 {
   margin: auto;
+  margin-top: 10%;
+  width: 30%;
+background-color: #CF5C36;
 }
-.sisalto
+/*Rajataan ja keskitetään*/
+#sisalto
 {
   margin-left: 20px;
   margin-top: 20px;
   box-sizing: border-box;
   border-style: groove;
-  width: 350px;
-  height: 250px;
+  width: 430px;
+  height: 330px;
+  border-color: #000000;
   border-radius: 30px;
   padding-left: 20px;
-  background-image: linear-gradient(to right, #7EEA7B, #DFEA7B);
+  background-image: linear-gradient(to right, #EEE5E9, #7C7C7C);
 }
 /*Annetaan teksille väri ja koko*/
-p {
-  color: white;
-  font-size: 24px;
+p
+{
+  font-size: 20px;
 }
 /*Rajataan käyttäjän syöttämää aluetta ja keskitetään*/
 #input {
@@ -26,5 +31,17 @@ p {
 }
 /*Rajataan button-painiketta*/
 #btn {
-  margin: 25px auto auto 5px;
+  margin: 24px auto auto 5px;
+}
+#wins
+{
+  float: left;
+  margin: auto;
+  padding-left: 230px;
+}
+#loose
+{
+  float: right;
+  margin: auto;
+  padding-right: 30px;
 }
