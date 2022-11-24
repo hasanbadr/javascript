@@ -1,77 +1,83 @@
 //laske onko luku positiivene vai negatiivinen
 function t1()
 {
-  var t01 = parseunt(dacument.getElementById('te1').value);
+  var t01 = parseInt(dacument.getElementById('te1').value);
   if(t01 >=0)
   {
-    alert("luku on positiivinen")
+    document.getElementById('v1').innerHTML = "luku on negatiivinen";
   }
   else
   {
-    alert("luku on negatiivinen")
+    document.getElementById('v1').innerHTML = "luku on positiivene";
   }
 }
 //syötä viikopäivä numerona
 function viikko()
 {
-  var viikko = parseunt(document.getElementById('te2').value);
+  var viikko = parseInt(document.getElementById('te2').value);
   switch (viikko)
    {
     case 1:
-    alert("maanantai");
+      document.getElementById('v2').innerHTML = "Maanantai";
       break;
     case 2:
-      alert("tiistai");
+      document.getElementById('v2').innerHTML = "Tiistai";
       break;
     case 3:
-      alert("keskiviikko");
+      document.getElementById('v2').innerHTML = "Keskiviikko";
       break;
     case 4:
-        alert("torstai");
+      document.getElementById('v2').innerHTML = "Torstai";
         break;
     case 5:
-      alert("perjantai");
+      document.getElementById('v2').innerHTML = "Perjantai";
       break;
     case 6:
-      alert("lauantai");
+      document.getElementById('v2').innerHTML = "Lauantai";
       break;
 
-    default:
-      alert("sunnuntai");
+    case 7:
+      document.getElementById('v2').innerHTML = "Sunnuntai";
       break;
+    default:
+    document.getElementById('v2').innerHTML = "Et antanut lukua välillä 1-7";
   }
 }
 //en teidä mikä tässä mättää, kun näyttää aina että vuosi on karkausvosi
 function vuosi()
 {
-  var vuosi = parseunt(document.getElementById('luku').value);
-  if (vuosi%4 == 0 && vuosi&100 !=0)
+  var vuosi = parseInt(document.getElementById('vuosi').value);
+  if (vuosi % 4 == 0 && vuosi &1 00 != 0)
   {
-    document.getElementById('tehtävä3').innerHTML = "vuosi on karkausvuosi"
+    document.getElementById('v3').innerHTML = "vuosi on karkausvuosi";
   }
-  else
+  else if(vousi % 400 == 0)
   {
-    document.getElementById('tehtävä3').innerHTML = "vuosi ei ole karkausvosi"
+    document.getElementById('v3').innerHTML = "vuosi ei ole karkausvosi";
+  }
+  else {
+    document.getElementById('v3').innerHTML = "Vuosi ei ole karkausvuosi";
   }
 }
 function laske()
 {
-  var l1 = parseunt(document.getElementById('n1').value);
-  var l2 = parseunt(document.getElementById('n2').value);
-  var l3 = parseunt(document.getElementById('n3').value);
-  var l4 = parseunt(document.getElementById('n4').value);
-  var l5 = parseunt(document.getElementById('n5').value);
-  let summan = l1 + l2 + l3 + l4 + l5;
-  let keskiarvon = summan /5;
-  document.getElementById('te4').innerHTML = "lukujen summan on " +summan + "ja keskiarrvo on" + keskiarvon;
+      var luku1, luku2, luku3, luku4, luku5, summa, keskiarvo;
+      luku1 = parseInt(document.getElementById('lu1').value);
+      luku2 = parseInt(document.getElementById('lu2').value);
+      luku3 = parseInt(document.getElementById('lu3').value);
+      luku4 = parseInt(document.getElementById('lu4').value);
+      luku5 = parseInt(document.getElementById('lu5').value);
+      summan = luku1 + luku2 + luku3 + luku4 + luku5;
+      keskiarvon = summan / 5;
+  document.getElementById('v4').innerHTML = "lukujen " + luku1 + ", " + luku2 + ", " + luku3 + ", " + luku4 + ", " + luku5 + " summa = " + summa + " ja keskiarvo = " + keskiarvo;
 }
 functioon taulukko()
 {
-  var luvut = ' ';
-  var laskut = document.getElementById('numerot').value);
+  var kerrottava = parseInt(document.getElementById('luku').value)
+  var lause = "";
   for (var i = 1; i <= 10; i++)
   {
-    luvut+= laskut + ' x ' + i + ' = ' + laskut * i + '<br>';
+    lause += "luku" + kerrottava + " * " + i + " = " + kerrottava*i "<br />";
   }
-  document.getElementById('te5').innerHTML = luvut
+  document.getElementById('v5').innerHTML = lause;
 }
