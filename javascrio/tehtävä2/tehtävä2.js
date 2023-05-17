@@ -1,8 +1,8 @@
 //laske onko luku positiivene vai negatiivinen
 function t1()
 {
-  var t01 = parseInt(dacument.getElementById('te1').value);
-  if(t01 >=0)
+  var t01 = parseInt(document.getElementById('te1').value);
+  if(t01 < 0)
   {
     document.getElementById('v1').innerHTML = "luku on negatiivinen";
   }
@@ -47,13 +47,13 @@ function viikko()
 function vuosi()
 {
   var vuosi = parseInt(document.getElementById('vuosi').value);
-  if (vuosi % 4 == 0 && vuosi &1 00 != 0)
+  if (vuosi % 4 == 0 && vuosi % 100 != 0)
   {
     document.getElementById('v3').innerHTML = "vuosi on karkausvuosi";
   }
-  else if(vousi % 400 == 0)
+  else if(vousi % 400 == 0 && vuosi % 4 == 0)
   {
-    document.getElementById('v3').innerHTML = "vuosi ei ole karkausvosi";
+    document.getElementById('v3').innerHTML = "vuosi on karkausvuosi";
   }
   else {
     document.getElementById('v3').innerHTML = "Vuosi ei ole karkausvuosi";

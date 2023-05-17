@@ -1,88 +1,77 @@
 function tehtava1() //mikähän mahtaa olla pielessä, kun antaa 12 pistettä joka kirjaimelle eikä näytä kirjainta vaan NaN?
 {
-  var kirjain = parseInt(document.getElementById('t1').value);
-  var piste = 0;
-  for(var i = 0; i < kirjain.lenght; i++);
+  var pisteet = 0;
+  var annettuSana = parseInt(document.getElementById('t1').value);
+  for(var i = 0; i < annettuSana.lenght; i++)
 {
-  switch (kirjain[i])
+  switch (annettuSana[i])
 {
-    case 'q':
-    case 'Q':
-    case 'w':
-    case 'W':
+    case 'a':
     case 'e':
-    case 'E':
-    case 'r':
-    case 'R':
+    case 'i':
+    case 'n':
+    case 's':
     case 't':
+    case 'A':
+    case 'E':
+    case 'I':
+    case 'N':
+    case 'S':
     case 'T':
-    case 'y':
-    case 'Y':
       piste++;
       break;
-
-    case 'u':
-    case 'U':
-    case 'i':
-    case 'I':
     case 'o':
+    case '&aul;':
+    case 'k':
+    case 'l':
     case 'O':
-    case 'p':
-    case 'P':
+    case '&Aul':
+    case 'K':
+    case 'L':
       piste+=2;
       break;
-
-    case 'å':
-    case 'Å':
-    case 'a':
-    case 'A':
-    case 's':
-    case 'S':
-    case 'd':
-    case 'D':
+    case 'u':
+    case 'm':
+    case 'U':
+    case 'M':
       piste+=3;
       break;
-
+    case 'y':
     case 'h':
-    case 'H':
     case 'j':
+    case 'p':
+    case 'r':
+    case 'v':
+    case 'Y':
+    case 'H':
     case 'J':
-    case 'k':
-    case 'K':
-    case 'l':
-    case 'L':
+    case 'P':
+    case 'R':
+    case 'V':
       piste+=4;
       break;
-
-    case 'ö':
-    case 'Ö':
-    case 'ä':
-    case 'Ä':
+    case '&ouml;':
+    case 'd':
+    case '&Ouml;':
+    case 'D':
       piste+=7
       break;
-
-    case 'z':
-    case 'Z':
-    case 'x':
-    case 'X':
-    case 'c':
-    case 'C':
-    case 'v':
-    case 'V':
     case 'b':
+    case 'f':
+    case 'g':
     case 'B':
+    case 'F':
+    case 'G':
       piste+=8;
       break;
-
-    case 'm':
-    case 'M':
+    case 'c':
+    case 'C':
       piste+=10;
       break;
-
     default:
     piste+=12;
   }
-document.getElementById('t1').innerHTML = "Kirjaimen " + kirjain  + " piste on " + piste;
+document.getElementById('t1').innerHTML = "<p>sanan" + annettuSana + "pisteet ovat:" + pisteet + "</p>";
 }
 }
 function tehtava2()
