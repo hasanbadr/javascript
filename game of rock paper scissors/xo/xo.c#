@@ -1,0 +1,125 @@
+using System;
+
+namespace TicTacToe
+{
+    class Program
+    {
+        static char[,] board = new char[3, 3]; // Game board
+
+        static char currentPlayer = 'X'; // Current player (X or O)
+
+        static bool gameEnded = false; // Flag to check if the game has ended
+
+        static void Main(string[] args)
+        {
+            InitializeBoard();
+
+            while (!gameEnded)
+            {
+                PrintBoard();
+                GetPlayerMove();
+                CheckGameEnd();
+                SwitchPlayer();
+            }
+        }
+
+        // Initialize the game board with empty cells
+        static void InitializeBoard()
+        {
+            for (int row = 0; row < 3; row++)
+            {
+                for (int col = 0; col < 3; col++)
+                {
+                    board[row, col] = ' ';
+                }
+            }
+        }
+
+        // Print the game board
+        static void PrintBoard()
+        {
+            Console.WriteLine("---------");
+            for (int row = 0; row < 3; row++)
+            {
+                Console.Write("| ");
+                for (int col = 0; col < 3; col++)
+                {
+                    Console.Write(board[row, col] + " | ");
+                }
+                Console.WriteLine("\n---------");
+            }
+        }
+
+        // Get the player's move (row and column)
+        static void GetPlayerMove()
+        {
+            Console.WriteLine("Player {0}, enter your move (row and column): ", currentPlayer);
+            bool validInput = false;
+
+            while (!validInput)
+            {
+                string[] input = Console.ReadLine().Split(' ');
+
+                if (input.Length != 2)
+                {
+                    Console.WriteLine("Invalid input! Please enter your move in the format 'row column'.");
+                    continue;
+                }
+
+                int row, col;
+                if (!int.TryParse(input[0], out row) || !int.TryParse(input[1], out col))
+                {
+                    Console.WriteLine("Invalid input! Please enter valid row and column numbers.");
+                    continue;
+                }
+
+                if (row < 0 || row >= 3 || col < 0 || col >= 3)
+                {
+                    Console.WriteLine("Invalid input! Row and column numbers should be between 0 and 2.");
+                    continue;
+                }
+
+                if (board[row, col] != ' ')
+                {
+                    Console.WriteLine("Invalid move! That cell is already occupied. Please choose another move.");
+                    continue;
+                }
+
+                board[row, col] = currentPlayer;
+                validInput = true;
+            }
+        }
+
+        // Check if the game has ended (win or draw)
+        static void CheckGameEnd()
+        {
+            if (HasPlayerWon(currentPlayer))
+            {
+                PrintBoard();
+                Console.WriteLine("Player {0} wins!", currentPlayer);
+                gameEnded = true;
+            }
+            else if (IsBoardFull())
+            {
+                PrintBoard();
+                Console.WriteLine("It's a draw!");
+                gameEnded = true;
+            }
+        }
+
+        // Check if the current player has won
+        static bool HasPlayerWon(char player)
+        {
+            // Check rows
+            for (int row = 0; row < 3; row++)
+            {
+                if (board[row, 0] == player && board[row, 1] == player && board[row, 2] == player)
+                {
+                    return true;
+                }
+            }
+
+            // Check columns
+            for (int col = 0; col < 3; col++)
+            {
+                if (board[0, col

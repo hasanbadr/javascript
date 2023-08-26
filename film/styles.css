@@ -1,0 +1,25 @@
+// نفس الأكواد السابقة
+
+const episodes = [
+  { title: "حلقة 1", episodeNumber: 1, description: "وصف حلقة 1" },
+  { title: "حلقة 2", episodeNumber: 2, description: "وصف حلقة 2" },
+  // ... إضافة المزيد من الحلقات هنا
+];
+
+const episodeList = document.getElementById("episode-list");
+
+episodes.forEach(episode => {
+  const episodeItem = document.createElement("div");
+  episodeItem.classList.add("episode-item");
+
+  const episodeTitle = document.createElement("h3");
+  episodeTitle.textContent = `حلقة ${episode.episodeNumber}: ${episode.title}`;
+
+  const episodeDescription = document.createElement("p");
+  episodeDescription.textContent = episode.description;
+
+  episodeItem.appendChild(episodeTitle);
+  episodeItem.appendChild(episodeDescription);
+
+  episodeList.appendChild(episodeItem);
+});
